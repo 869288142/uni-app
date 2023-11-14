@@ -73,6 +73,9 @@ devDependencies:
   '@dcloudio/vite-plugin-uni':
     specifier: 3.0.0-3090620231104002
     version: registry.npmmirror.com/@dcloudio/vite-plugin-uni@3.0.0-3090620231104002(postcss@8.4.31)(vite@4.0.3)(vue@3.3.8)
+  '@types/wechat-miniprogram':
+    specifier: ^3.4.6
+    version: registry.npmmirror.com/@types/wechat-miniprogram@3.4.6
   '@vue/runtime-core':
     specifier: ^3.3.8
     version: registry.npmmirror.com/@vue/runtime-core@3.3.8
@@ -3693,6 +3696,12 @@ packages:
     resolution: {integrity: sha512-9aEbYZ3TbYMznPdcdr3SmIrLXwC/AKZXQeCf9Pgao5CKb8CyHuEX5jzWPTkvregvhRJHcpRO6BFoGW9ycaOkYw==, tarball: https://registry.npmmirror.com/@types/stack-utils/-/stack-utils-2.0.3.tgz}
     name: '@types/stack-utils'
     version: 2.0.3
+    dev: true
+
+  registry.npmmirror.com/@types/wechat-miniprogram@3.4.6:
+    resolution: {integrity: sha512-j0s4iqLdpZjB7VpaMQECGkEaBm1lYAScqYtoNim9ITP60NiJlTFRgiZilOKgXhuYEVlSCzqRATijCjNPhA0JOg==, tarball: https://registry.npmmirror.com/@types/wechat-miniprogram/-/wechat-miniprogram-3.4.6.tgz}
+    name: '@types/wechat-miniprogram'
+    version: 3.4.6
     dev: true
 
   registry.npmmirror.com/@types/yargs-parser@21.0.3:
