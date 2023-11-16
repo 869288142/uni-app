@@ -1,41 +1,19 @@
 <template>
   <view class="content">
-    <view class="text-area">
-      <text class="title" @click="increment">增加</text>
-      <text class="title" @click="lookCount">查看</text>
+    <view>
+      <text class="title" @click="inc()">增加</text>
+      <text class="title" @click="dec()">查看</text>
       <text class="title">{{ count }}</text>
     </view>
   </view>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-const count = ref(0);
-
-function increment() {
-  count.value = count.value + 1;
-  try {
-    uni.setStorageSync("storage_key", count.value);
-  } catch (e) {
-    console.log(e);
-    // error
-  }
-}
-
-function lookCount() {
-  try {
-    const value = uni.getStorageSync("storage_key");
-    if (value) {
-      console.log(value);
-    }
-  } catch (e) {
-    console.log(e);
-    // error
-  }
-}
+import { useCounter } from '@vueuse/core'
+const { count, inc, dec, set, reset } = useCounter()
 </script>
 
-<style>
+<style lang="scss">
 .content {
   display: flex;
   flex-direction: column;
